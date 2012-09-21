@@ -1,0 +1,1 @@
+../stage02/run_check_resources_as.pl
