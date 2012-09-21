@@ -86,6 +86,11 @@ print "\n";
 print "\n";
 print "########################### GIT CLONE POPULATE_RESOURCES_AS_USER ##############################\n";
 
+if( -e "./populate_resources_as_user" ){
+	print "rm -fr ./populate_resources_as_user";
+	system("rm -fr ./populate_resources_as_user");
+};
+
 print "\n";
 print "git clone git+ssh://test-server\@git.eucalyptus-systems.com/mnt/repos/qa/testunit/populate_resources_as_user";
 system("git clone git+ssh://test-server\@git.eucalyptus-systems.com/mnt/repos/qa/testunit/populate_resources_as_user");
